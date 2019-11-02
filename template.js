@@ -1,4 +1,3 @@
-const CREDS = require('./creds');
 const puppeteer = require('puppeteer-core');
 
 (async () => {
