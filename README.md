@@ -3,7 +3,7 @@
 Basic usage of puppeteer - https://github.com/GoogleChrome/puppeteer
 
 Using [puppeteer-core](https://www.npmjs.com/package/puppeteer-core) here, which uses an already installed version of chromium.
-Adjust the import to `require('puppeteer');` if you want to use the regular package, which downloads a fitting chroumium version.
+Adjust the import to `require('puppeteer');` if you want to use the regular package, which downloads a fitting chromium version.
 
 ```js
 const puppeteer = require('puppeteer-core');
