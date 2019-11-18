@@ -13,12 +13,12 @@ const waitTime = 5 * 1000;
     args: ['--start-fullscreen'],
   });
   const urls = [
-    'http://example.com/',
-    'http://example.com/',
-    'http://example.com/',
-    // 'https://apod.nasa.gov/apod/image/1911/ngc5907_gabany_rcl1024.jpg',
-    // 'https://apod.nasa.gov/apod/image/1911/M16_HaSynLumLumRGB1024.jpg',
-    // 'https://apod.nasa.gov/apod/image/1911/jC-L-TM_SunFinal5HRweb1024.jpg',
+    // 'http://example.com/',
+    // 'http://example.com/',
+    // 'http://example.com/',
+    'https://apod.nasa.gov/apod/image/1911/ngc5907_gabany_rcl1024.jpg',
+    'https://apod.nasa.gov/apod/image/1911/M16_HaSynLumLumRGB1024.jpg',
+    'https://apod.nasa.gov/apod/image/1911/jC-L-TM_SunFinal5HRweb1024.jpg',
   ];
   const page = (await browser.pages())[0];
   await page.goto(urls[0], {
@@ -33,7 +33,7 @@ const waitTime = 5 * 1000;
     waitUntil: 'load',
   });
 
-  while (1) {
+  while (true) {
     await page.bringToFront();
     await page.waitFor(waitTime);
     await page1.bringToFront();
@@ -41,5 +41,4 @@ const waitTime = 5 * 1000;
     await page2.bringToFront();
     await page.waitFor(waitTime);
   }
-  await browser.close();
 })();
