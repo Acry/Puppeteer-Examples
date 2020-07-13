@@ -1,6 +1,6 @@
 {
   "name": "puppeteer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Acry/Puppeteer-Examples.git"
+  },
   "dependencies": {
-    "puppeteer-core": "^2.0.0"
+    "puppeteer-core": "latest"
   }
 }

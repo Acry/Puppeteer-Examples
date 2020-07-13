@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer-core');
-
+// IIFE
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
@@ -10,6 +10,6 @@ const puppeteer = require('puppeteer-core');
   await page.goto('http://example.com/', {
     waitUntil: 'load',
   });
-  await browser.waitForTarget(() => false);
+  // await browser.waitForTarget(() => true);
   await browser.close();
 })();
